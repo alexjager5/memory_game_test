@@ -1,0 +1,19 @@
+.cardWrapper {
+  perspective: 1000px;
+}
+
+.card {
+  @apply rounded-lg h-full w-full w-[130px] relative bg-board;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cardFace {
+  @apply h-full w-full absolute rounded-lg;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotated {
+  transform: rotateY(180deg);
+}
